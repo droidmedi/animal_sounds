@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$USER_HOME$/Téléchargements/flutter/.pub-cache/hosted/pub.dartlang.org/admob-0.1.27/android" />
+            <option value="$USER_HOME$/Téléchargements/flutter/.pub-cache/hosted/pub.dartlang.org/audioplayers-0.7.6/android" />
+            <option value="$USER_HOME$/Téléchargements/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_admob-0.6.1/android" />
+            <option value="$USER_HOME$/Téléchargements/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_analytics-1.0.3/android" />
+            <option value="$USER_HOME$/Téléchargements/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-0.4.1/android" />
+            <option value="$USER_HOME$/Téléchargements/flutter/.pub-cache/hosted/pub.dartlang.org/share-0.5.3/android" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

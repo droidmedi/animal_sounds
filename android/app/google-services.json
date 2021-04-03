@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1040838150004",
+    "firebase_url": "https://animalsounds-1e2e1.firebaseio.com",
+    "project_id": "animalsounds-1e2e1",
+    "storage_bucket": "animalsounds-1e2e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1040838150004:android:d179a8d35a432d0a",
+        "android_client_info": {
+          "package_name": "com.farmanimalsounds.petsanimalsounds"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1040838150004-kek1bsen6hpm5cu84p8gluh1gllkklts.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtW74ilMms2X6z7dOgvkGyflXwZLjRO5s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
