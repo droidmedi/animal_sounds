@@ -24,7 +24,7 @@ class PageFermPic extends StatelessWidget {
 
   static final MobileAdTargetingInfo targetingInfo = MobileAdTargetingInfo(
   //  testDevices: testDevice != null ? <String>[testDevice] : null
-    keywords: ['Animal Sounds', 'animal farm Sounds','sons des animeaux domestique','animeux de le ferme'],
+    keywords: ['Animal Sounds', 'animal farm Sounds','sons des animaux domestique','animaux de le ferme'],
     
     childDirected: true,
   );
