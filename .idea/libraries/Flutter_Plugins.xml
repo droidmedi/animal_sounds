@@ -1,13 +1,17 @@
 <component name="libraryTable">
   <library name="Flutter Plugins">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../../../flutter_linux_1.17.5-stable/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-1.6.27" />
-      <root url="file://$PROJECT_DIR$/../../../flutter_linux_1.17.5-stable/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_admob-0.9.0+10" />
-      <root url="file://$PROJECT_DIR$/../../../flutter_linux_1.17.5-stable/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_macos-0.0.4+8" />
-      <root url="file://$PROJECT_DIR$/../../../flutter_linux_1.17.5-stable/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_linux-0.0.1+2" />
-      <root url="file://$PROJECT_DIR$/../../../flutter_linux_1.17.5-stable/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-0.0.4+3" />
-      <root url="file://$PROJECT_DIR$/../../../flutter_linux_1.17.5-stable/flutter/.pub-cache/hosted/pub.dartlang.org/share-0.6.3+5" />
-      <root url="file://$PROJECT_DIR$/../../../flutter_linux_1.17.5-stable/flutter/.pub-cache/hosted/pub.dartlang.org/audioplayers-0.13.7" />
+      <root url="file://$PROJECT_DIR$/../../../flutter_linux_1.17.5-stable/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-2.0.5" />
+      <root url="file://$PROJECT_DIR$/../../../flutter_linux_1.17.5-stable/flutter/.pub-cache/hosted/pub.dartlang.org/share-2.0.4" />
+      <root url="file://$PROJECT_DIR$/../../../flutter_linux_1.17.5-stable/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-2.0.9" />
+      <root url="file://$PROJECT_DIR$/../../../flutter_linux_1.17.5-stable/flutter/.pub-cache/hosted/pub.dartlang.org/audioplayers-0.20.1" />
+      <root url="file://$PROJECT_DIR$/../../../flutter_linux_1.17.5-stable/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_android-2.0.12" />
+      <root url="file://$PROJECT_DIR$/../../../flutter_linux_1.17.5-stable/flutter/.pub-cache/hosted/pub.dartlang.org/assets_audio_player-3.0.4+1" />
+      <root url="file://$PROJECT_DIR$/../../../flutter_linux_1.17.5-stable/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_ios-2.0.8" />
+      <root url="file://$PROJECT_DIR$/../../../flutter_linux_1.17.5-stable/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_linux-2.1.5" />
+      <root url="file://$PROJECT_DIR$/../../../flutter_linux_1.17.5-stable/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_macos-2.0.5" />
+      <root url="file://$PROJECT_DIR$/../../../flutter_linux_1.17.5-stable/flutter/.pub-cache/hosted/pub.dartlang.org/assets_audio_player_web-3.0.4+1" />
+      <root url="file://$PROJECT_DIR$/../../../flutter_linux_1.17.5-stable/flutter/.pub-cache/hosted/pub.dartlang.org/google_mobile_ads-1.2.0" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

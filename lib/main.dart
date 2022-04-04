@@ -1,10 +1,10 @@
 import 'package:animal_sounds/PageFerm.dart';
 import 'package:animal_sounds/PageDomestique.dart';
-import 'package:firebase_admob/firebase_admob.dart';
 import 'package:flutter/material.dart';
-
-import 'fermePic.dart';
 import 'package:share/share.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
+
+import 'ad_helper.dart';
 
 //import 'package:fluttertoast/fluttertoast.dart';
 
@@ -14,13 +14,19 @@ import 'package:share/share.dart';
 //const APP_ID = "ca-app-pub-8252478336271858/6028044195";
 //const APP_ID = "ca-app-pub-3940256099942544/1033173712";
 
-void main() => runApp(AnimalSounds());
+//void main() => runApp(AnimalSounds());
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  MobileAds.instance.initialize();
+
+
+  runApp(AnimalSounds());
+}
 
 class AnimalSounds extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
-    FirebaseAdMob.instance
-        .initialize(appId: "ca-app-pub-8252478336271858~2076131403");
 
     return MaterialApp(
       title: "Animal Sounds",
@@ -30,24 +36,60 @@ class AnimalSounds extends StatelessWidget {
 }
 
 class Acceuil extends StatefulWidget {
+
+
   @override
   HomePage createState() => HomePage();
+
 }
 
 class HomePage extends State<Acceuil> {
-  /* void showColoredToast() {
-    Fluttertoast.showToast(
-        msg: "This is Colored Toast",
-        toastLength: Toast.LENGTH_SHORT,
-        backgroundColor: Colors.red,
-        textColor: Colors.white);
-  }*/
+  late BannerAd _bottomBannerAd;
+  bool _isBottomBannerAdLoaded = false;
+  void _createBottomBannerAd() {
+    _bottomBannerAd = BannerAd(
+      adUnitId: AdHelper.bannerAdUnitId,
+      size: AdSize.banner,
+      request: AdRequest(),
+      listener: BannerAdListener(
+        onAdLoaded: (_) {
+          setState(() {
+            _isBottomBannerAdLoaded = true;
+          });
+        },
+        onAdFailedToLoad: (ad, error) {
+          ad.dispose();
+        },
+      ),
+    );
+    _bottomBannerAd.load();
+  }
+
+
+  @override
+  void initState() {
+    super.initState();
+    _createBottomBannerAd();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    _bottomBannerAd.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: new Scaffold(
+        bottomNavigationBar: _isBottomBannerAdLoaded
+            ? Container(
+          height: _bottomBannerAd.size.height.toDouble(),
+          width: _bottomBannerAd.size.width.toDouble(),
+          child: AdWidget(ad: _bottomBannerAd),
+        )
+            : null,
         backgroundColor: Colors.teal,
         appBar: new AppBar(
           backgroundColor: Colors.blueGrey,
@@ -55,7 +97,8 @@ class HomePage extends State<Acceuil> {
             new IconButton(
               icon: Icon(Icons.share),
               onPressed: () {
-                final RenderBox box = context.findRenderObject();
+             //   final RenderBox box = context.findRenderObject();
+                final RenderBox box = context.findRenderObject() as RenderBox;
                 Share.share(
                     'https://play.google.com/store/apps/details?id=com.farmanimalsounds.petsanimalsounds',
                     sharePositionOrigin:
@@ -70,11 +113,13 @@ class HomePage extends State<Acceuil> {
               image: DecorationImage(
             image: AssetImage("assets/images/fondapp.jpg"),
             fit: BoxFit.cover,
-          )),
+          )
+          ),
+          alignment: Alignment.center,
           child: SingleChildScrollView(
             child: new Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              //  crossAxisAlignment: CrossAxisAlignment.stretch,
+              //crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 Padding(
                   padding: const EdgeInsets.all(12.0),
@@ -160,7 +205,7 @@ class HomePage extends State<Acceuil> {
 
                                       var route = new MaterialPageRoute(
                                         builder: (BuildContext context) =>
-                                            new PageFermPic(value: "2"),
+                                            new PageFerm(valuee: 0),
                                       );
                                       Navigator.of(context).push(route);
                                     },
